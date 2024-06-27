@@ -1,13 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <script src="assets/script.js"></script>
+    <title>Informações</title>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    
+    <div class="form-container">
+        <h1>Informações do Aluno</h1>
+        <div class="form-section">
+            <form action="#" method="post">
+                <label for="escola">Escola:</label>
+                <input type="text" id="escola" name="escola" required>
+
+                <label for="aluno">Aluno:</label>
+                <input type="text" id="aluno" name="aluno" required>
+
+                <label for="ano">Ano/Série:</label>
+                <input type="text" id="ano" name="ano" required>
+
+                <label for="equipe">Equipe de Elaboração:</label>
+                <input type="text" id="equipe" name="equipe" required>
+
+                <label for="periodo">Período de Elaboração:</label>
+                <input type="text" id="periodo" name="periodo" required>
+            </form>
+        </div>
+
+        <div class="habilidades-section">
+            <h2>Habilidades Acadêmicas</h2>
+            <h4>Leitura, escrita, soletração, matemática, línguas etc</h4>
+            <form action="#" method="post">
+                <label for="habilidade1-1">Inteligências / Metas:</label>
+                <div class="rating">
+                    <input type="radio" id="habilidade1-1" name="habilidade1-1" value="1" required>
+                    <label for="habilidade1-1">1</label>
+                    <input type="radio" id="habilidade1-2" name="habilidade1-1" value="2" required>
+                    <label for="habilidade1-2">2</label>
+                    <input type="radio" id="habilidade1-3" name="habilidade1-1" value="3" required>
+                    <label for="habilidade1-3">3</label>
+                    <input type="radio" id="habilidade1-4" name="habilidade1-1" value="4" required>
+                    <label for="habilidade1-4">4</label>
+                    <input type="radio" id="habilidade1-5" name="habilidade1-1" value="5" required>
+                    <label for="habilidade1-5">5</label>
+                </div>
+
+                <label for="habilidade2-1">Metodologia e Recursos Didáticos:</label>
+                <div class="rating">
+                    <input type="radio" id="habilidade2-1" name="habilidade2-1" value="1" required>
+                    <label for="habilidade2-1">1</label>
+                    <input type="radio" id="habilidade2-2" name="habilidade2-1" value="2" required>
+                    <label for="habilidade2-2">2</label>
+                    <input type="radio" id="habilidade2-3" name="habilidade2-1" value="3" required>
+                    <label for="habilidade2-3">3</label>
+                    <input type="radio" id="habilidade2-4" name="habilidade2-1" value="4" required>
+                    <label for="habilidade2-4">4</label>
+                    <input type="radio" id="habilidade2-5" name="habilidade2-1" value="5" required>
+                    <label for="habilidade2-5">5</label>
+                </div>
+
+                <label for="habilidade3-1">Avaliação:</label>
+                <div class="rating">
+                    <input type="radio" id="habilidade3-1" name="habilidade3-1" value="1" required>
+                    <label for="habilidade3-1">1</label>
+                    <input type="radio" id="habilidade3-2" name="habilidade3-1" value="2" required>
+                    <label for="habilidade3-2">2</label>
+                    <input type="radio" id="habilidade3-3" name="habilidade3-1" value="3" required>
+                    <label for="habilidade3-3">3</label>
+                    <input type="radio" id="habilidade3-4" name="habilidade3-1" value="4" required>
+                    <label for="habilidade3-4">4</label>
+                    <input type="radio" id="habilidade3-5" name="habilidade3-1" value="5" required>
+                    <label for="habilidade3-5">5</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="habilidades-section">
+            <h2>Habilidades da vida diária</h2>
+            <h4>Vestuário, aparência, organização de pertences pessoais, lidar com dinheiro, locomoção (a pé, ônibus etc.)</h4>
+            <form action="#" method="post">
+                <label for="habilidade1-2">Inteligências / Metas:</label>
+                <div class="rating">
+                    <input type="radio" id="habilidade1-6" name="habilidade1-2" value="1" required>
+                    <label for="habilidade1-6">1</label>
+                    <input type="radio" id="habilidade1-7" name="habilidade1-2" value="2" required>
+                    <label for="habilidade1-7">2</label>
+                    <input type="radio" id="habilidade1-8" name="habilidade1-2" value="3" required>
+                    <label for="habilidade1-8">3</label>
+                    <input type="radio" id="habilidade1-9" name="habilidade1-2" value="4" required>
+                    <label for="habilidade1-9">4</label>
+                    <input type="radio" id="habilidade1-10" name="habilidade1-2" value="5" required>
+                    <label for="habilidade1-10">5</label>
+                </div>
+
+                <label for="habilidade2-2">Metodologia e Recursos Didáticos:</label>
+                <div class="rating">
+                    <input type="radio" id="habilidade2-6" name="habilidade2-2" value="1" required>
+                    <label for="habilidade2-6">1</label>
+                    <input type="radio" id="habilidade2-7" name="habilidade2-2" value="2" required>
+                    <label for="habilidade2-7">2</label>
+                    <input type="radio" id="habilidade2-8" name="habilidade2-2" value="3" required>
+                    <label for="habilidade2-8">3</label>
+                    <input type="radio" id="habilidade2-9" name="habilidade2-2" value="4" required>
+                    <label for="habilidade2-9">4</label>
+                    <input type="radio" id="habilidade2-10" name="habilidade2-2" value="5" required>
+                    <label for="habilidade2-10">5</label>
+                </div>
+
+                <label for="habilidade3-2">Avaliação:</label>
+                <div class="rating">
+                    <input type="radio" id="habilidade3-6" name="habilidade3-2" value="1" required>
+                    <label for="habilidade3-6">1</label>
+                    <input type="radio" id="habilidade3-7" name="habilidade3-2" value="2" required>
+                    <label for="habilidade3-7">2</label>
+                    <input type="radio" id="habilidade3-8" name="habilidade3-2" value="3" required>
+                    <label for="habilidade3-8">3</label>
+                    <input type="radio" id="habilidade3-9" name="habilidade3-2" value="4" required>
+                    <label for="habilidade3-9">4</label>
+                    <input type="radio" id="habilidade3-10" name="habilidade3-2" value="5" required>
+                    <label for="habilidade3-10">5</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="habilidades-section">
+            <h2>Habilidades motoras/atividade física</h2>
+            <h4>Coordenação olho mão, equilíbrio, natação, jogar bola, andar de bicicleta etc.</h4>
+            <form action="#" method="post">
+                <label for="habilidade1-3">Inteligências / Metas:</label>
+                <div class="rating">
+                    <input type="radio" id="habilidade1-11" name="habilidade1-3" value="1" required>
+                    <label for="habilidade1-11">1</label>
+                    <input type="radio" id="habilidade1-12" name="habilidade1-3" value="2" required>
+                    <label for="habilidade1-12">2</label>
+                    <input type="radio" id="habilidade1-13" name="habilidade1-3" value="3" required>
+                    <label for="habilidade1-13">3</label>
+                    <input type="radio" id="habilidade1-14" name="habilidade1-3" value="4" required>
+                    <label for="habilidade1-14">4</label>
+                    <input type="radio" id="habilidade1-15" name="habilidade1-3" value="5" required>
+                    <label for="habilidade1-15">5</label>
+                </div>
+
+                <label for="habilidade2-3">Metodologia e Recursos Didáticos:</label>
+                <div class="rating">
+                    <input type="radio" id="habilidade2-11" name="habilidade2-3" value="1" required>
+                    <label for="habilidade2-11">1</label>
+                    <input type="radio" id="habilidade2-12" name="habilidade2-3" value="2" required>
+                    <label for="habilidade2-12">2</label>
+                    <input type="radio" id="habilidade2-13" name="habilidade2-3" value="3" required>
+                    <label for="habilidade2-13">3</label>
+                    <input type="radio" id="habilidade2-14" name="habilidade2-3" value="4" required>
+                    <label for="habilidade2-14">4</label>
+                    <input type="radio" id="habilidade2-15" name="habilidade2-3" value="5" required>
+                    <label for="habilidade2-15">5</label>
+                </div>
+
+                <label for="habilidade3-3">Avaliação:</label>
+                <div class="rating">
+                    <input type="radio" id="habilidade3-11" name="habilidade3-3" value="1" required>
+                    <label for="habilidade3-11">1</label>
+                    <input type="radio" id="habilidade3-12" name="habilidade3-3" value="2" required>
+                    <label for="habilidade3-12">2</label>
+                    <input type="radio" id="habilidade3-13" name="habilidade3-3" value="3" required>
+                    <label for="habilidade3-13">3</label>
+                    <input type="radio" id="habilidade3-14" name="habilidade3-3" value="4" required>
+                    <label for="habilidade3-14">4</label>
+                    <input type="radio" id="habilidade3-15" name="habilidade3-3" value="5" required>
+                    <label for="habilidade3-15">5</label>
+                </div>
+            </form>
+        </div>
+
+        <!-- Novas seções adicionadas -->
+        <div class="habilidades-section">
+            <h2>Habilidades Sociais</h2>
+            <h4>Interatividade com colegas, resolução de conflitos, participação em grupo, empatia, comunicação etc.</h4>
+            <form action="#" method="post">
+                <label for="habilidade1-4">Inteligências / Metas:</label>
+                <div class="rating">
+                    <input type="radio" id="habilidade1-16" name="habilidade1-4" value="1" required>
+                    <label for="habilidade1-16">1</label>
+                    <input type="radio" id="habilidade1-17" name="habilidade1-4" value="2" required>
+                    <label for="habilidade1-17">2</label>
+                    <input type="radio" id="habilidade1-18" name="habilidade1-4" value="3" required>
+                    <label for="habilidade1-18">3</label>
+                    <input type="radio" id="habilidade1-19" name="habilidade1-4" value="4" required>
+                    <label for="habilidade1-19">4</label>
+                    <input type="radio" id="habilidade1-20" name="habilidade1-4" value="5" required>
+                    <label for="habilidade1-20">5</label>
+                </div>
+
+                <label for="habilidade2-4">Metodologia e Recursos Didáticos:</label>
+                <div class="rating">
+                    <input type="radio" id="habilidade2-16" name="habilidade2-4" value="1" required>
+                    <label for="habilidade2-16">1</label>
+                    <input type="radio" id="habilidade2-17" name="habilidade2-4" value="2" required>
+                    <label for="habilidade2-17">2</label>
+                    <input type="radio" id="habilidade2-18" name="habilidade2-4" value="3" required>
+                    <label for="habilidade2-18">3</label>
+                    <input type="radio" id="habilidade2-19" name="habilidade2-4" value="4" required>
+                    <label for="habilidade2-19">4</label>
+                    <input type="radio" id="habilidade2-20" name="habilidade2-4" value="5" required>
+                    <label for="habilidade2-20">5</label>
+                </div>
+
+                <label for="habilidade3-4">Avaliação:</label>
+                <div class="rating">
+                    <input type="radio" id="habilidade3-16" name="habilidade3-4" value="1" required>
+                    <label for="habilidade3-16">1</label>
+                    <input type="radio" id="habilidade3-17" name="habilidade3-4" value="2" required>
+                    <label for="habilidade3-17">2</label>
+                    <input type="radio" id="habilidade3-18" name="habilidade3-4" value="3" required>
+                    <label for="habilidade3-18">3</label>
+                    <input type="radio" id="habilidade3-19" name="habilidade3-4" value="4" required>
+                    <label for="habilidade3-19">4</label>
+                    <input type="radio" id="habilidade3-20" name="habilidade3-4" value="5" required>
+                    <label for="habilidade3-20">5</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="habilidades-section">
+            <h2>Habilidades Criativas</h2>
+            <h4>Expressão artística, inovação, improvisação, habilidades manuais, música, dança etc.</h4>
+            <form action="#" method="post">
+                <label for="habilidade1-5">Inteligências / Metas:</label>
+                <div class="rating">
+                    <input type="radio" id="habilidade1-21" name="habilidade1-5" value="1" required>
+                    <label for="habilidade1-21">1</label>
+                    <input type="radio" id="habilidade1-22" name="habilidade1-5" value="2" required>
+                    <label for="habilidade1-22">2</label>
+                    <input type="radio" id="habilidade1-23" name="habilidade1-5" value="3" required>
+                    <label for="habilidade1-23">3</label>
+                    <input type="radio" id="habilidade1-24" name="habilidade1-5" value="4" required>
+                    <label for="habilidade1-24">4</label>
+                    <input type="radio" id="habilidade1-25" name="habilidade1-5" value="5" required>
+                    <label for="habilidade1-25">5</label>
+                </div>
+
+                <label for="habilidade2-5">Metodologia e Recursos Didáticos:</label>
+                <div class="rating">
+                    <input type="radio" id="habilidade2-21" name="habilidade2-5" value="1" required>
+                    <label for="habilidade2-21">1</label>
+                    <input type="radio" id="habilidade2-22" name="habilidade2-5" value="2" required>
+                    <label for="habilidade2-22">2</label>
+                    <input type="radio" id="habilidade2-23" name="habilidade2-5" value="3" required>
+                    <label for="habilidade2-23">3</label>
+                    <input type="radio" id="habilidade2-24" name="habilidade2-5" value="4" required>
+                    <label for="habilidade2-24">4</label>
+                    <input type="radio" id="habilidade2-25" name="habilidade2-5" value="5" required>
+                    <label for="habilidade2-25">5</label>
+                </div>
+
+                <label for="habilidade3-5">Avaliação:</label>
+                <div class="rating">
+                    <input type="radio" id="habilidade3-21" name="habilidade3-5" value="1" required>
+                    <label for="habilidade3-21">1</label>
+                    <input type="radio" id="habilidade3-22" name="habilidade3-5" value="2" required>
+                    <label for="habilidade3-22">2</label>
+                    <input type="radio" id="habilidade3-23" name="habilidade3-5" value="3" required>
+                    <label for="habilidade3-23">3</label>
+                    <input type="radio" id="habilidade3-24" name="habilidade3-5" value="4" required>
+                    <label for="habilidade3-24">4</label>
+                    <input type="radio" id="habilidade3-25" name="habilidade3-5" value="5" required>
+                    <label for="habilidade3-25">5</label>
+                </div>
+            </form>
+        </div>
+        
+        <button type="submit">Enviar</button>
+    </div>
 </body>
 </html>
