@@ -5,33 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informações</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/polyfills.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="assets/script.js"></script>
 </head>
 <body>
-    <div class="form-container">
+    <form class="form-container" onsubmit="return false;">
         <h1>Informações do Aluno</h1>
         <div class="form-section">
-            <form action="#" method="post">
-                <label for="escola">Escola:</label>
-                <input type="text" id="escola" name="escola" required>
+            <label for="escola">Escola:</label>
+            <input type="text" id="escola" name="escola" required>
 
-                <label for="aluno">Aluno:</label>
-                <input type="text" id="aluno" name="aluno" required>
+            <label for="aluno">Aluno:</label>
+            <input type="text" id="aluno" name="aluno" required>
 
-                <label for="ano">Ano/Série:</label>
-                <input type="text" id="ano" name="ano" required>
+            <label for="ano">Ano/Série:</label>
+            <input type="text" id="ano" name="ano" required>
 
-                <label for="equipe">Equipe de Elaboração:</label>
-                <input type="text" id="equipe" name="equipe" required>
+            <label for="equipe">Equipe de Elaboração:</label>
+            <input type="text" id="equipe" name="equipe" required>
 
-                <label for="periodo">Período de Elaboração:</label>
-                <input type="text" id="periodo" name="periodo" required>
-            </form>
+            <label for="periodo">Período de Elaboração:</label>
+            <input type="text" id="periodo" name="periodo" required>
         </div>
 
         <div class="habilidades-section">
             <h2>Habilidades Acadêmicas</h2>
             <h4>Leitura, escrita, soletração, matemática, línguas etc</h4>
-            <form action="#" method="post">
+            <div action="#" method="post">
                 <label for="habilidade1-1">Inteligências / Metas:</label>
                 <div class="rating">
                     <input type="radio" id="habilidade1-1" name="habilidade1-1" value="1" required>
@@ -73,13 +74,13 @@
                     <input type="radio" id="habilidade3-5" name="habilidade3-1" value="5" required>
                     <label for="habilidade3-5">5</label>
                 </div>
-            </form>
+            </div>
         </div>
 
         <div class="habilidades-section">
             <h2>Habilidades da vida diária</h2>
             <h4>Vestuário, aparência, organização de pertences pessoais, lidar com dinheiro, locomoção (a pé, ônibus etc.)</h4>
-            <form action="#" method="post">
+            <div action="#" method="post">
                 <label for="habilidade1-2">Inteligências / Metas:</label>
                 <div class="rating">
                     <input type="radio" id="habilidade1-6" name="habilidade1-2" value="1" required>
@@ -121,13 +122,13 @@
                     <input type="radio" id="habilidade3-10" name="habilidade3-2" value="5" required>
                     <label for="habilidade3-10">5</label>
                 </div>
-            </form>
+            </div>
         </div>
 
         <div class="habilidades-section">
             <h2>Habilidades motoras/atividade física</h2>
             <h4>Coordenação olho mão, equilíbrio, natação, jogar bola, andar de bicicleta etc.</h4>
-            <form action="#" method="post">
+            <div action="#" method="post">
                 <label for="habilidade1-3">Inteligências / Metas:</label>
                 <div class="rating">
                     <input type="radio" id="habilidade1-11" name="habilidade1-3" value="1" required>
@@ -169,14 +170,14 @@
                     <input type="radio" id="habilidade3-15" name="habilidade3-3" value="5" required>
                     <label for="habilidade3-15">5</label>
                 </div>
-            </form>
+            </div>
         </div>
 
         <!-- Novas seções adicionadas -->
         <div class="habilidades-section">
             <h2>Habilidades Sociais</h2>
             <h4>Interatividade com colegas, resolução de conflitos, participação em grupo, empatia, comunicação etc.</h4>
-            <form action="#" method="post">
+            <div action="#" method="post">
                 <label for="habilidade1-4">Inteligências / Metas:</label>
                 <div class="rating">
                     <input type="radio" id="habilidade1-16" name="habilidade1-4" value="1" required>
@@ -218,13 +219,13 @@
                     <input type="radio" id="habilidade3-20" name="habilidade3-4" value="5" required>
                     <label for="habilidade3-20">5</label>
                 </div>
-            </form>
+            </div>
         </div>
 
         <div class="habilidades-section">
             <h2>Habilidades Criativas</h2>
             <h4>Expressão artística, inovação, improvisação, habilidades manuais, música, dança etc.</h4>
-            <form action="#" method="post">
+            <div action="#" method="post">
                 <label for="habilidade1-5">Inteligências / Metas:</label>
                 <div class="rating">
                     <input type="radio" id="habilidade1-21" name="habilidade1-5" value="1" required>
@@ -266,10 +267,10 @@
                     <input type="radio" id="habilidade3-25" name="habilidade3-5" value="5" required>
                     <label for="habilidade3-25">5</label>
                 </div>
-            </form>
+            </div>
         </div>
         
-        <button type="submit">Enviar</button>
+        <button type="submit" onclick="createPdf()">Enviar</button>
     </div>
 </body>
 </html>
